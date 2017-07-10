@@ -1,4 +1,4 @@
-import {Component, Input, ChangeDetectionStrategy } from '@angular/core';
+﻿import {Component, Input, ChangeDetectionStrategy } from '@angular/core';
 
 import { Cell } from '../../../lib/data-set/cell';
 
@@ -8,6 +8,7 @@ import { Cell } from '../../../lib/data-set/cell';
   template: `
     <div [ngSwitch]="cell.getColumn().type">
         <custom-view-component *ngSwitchCase="'custom'" [cell]="cell"></custom-view-component>
+        <lookup-viewer *ngSwitchCase="'lookup'" [cell]="cell"></lookup-viewer>
         <div *ngSwitchCase="'html'" [innerHTML]="cell.getValue()"></div>
         <div *ngSwitchDefault>{{ cell.getValue() }}</div>
     </div>

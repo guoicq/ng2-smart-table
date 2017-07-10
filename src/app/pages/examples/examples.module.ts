@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+﻿import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -22,6 +22,8 @@ import { ServerExamplesComponent } from './server/server-examples.component';
 import { CustomViewEditExamplesComponent } from './custom-edit-view/custom-edit-view-examples.component';
 import { BasicExampleCustomActionsComponent } from './custom-edit-view/basic-example-custom-actions.component';
 import { VariousExamplesComponent } from './various/various-examples.component';
+import { LookupRenderExamplesComponent } from './render/lookup-render-examples.component';
+import { BasicLookupRenderExampleComponent } from './render/basic-lookup-render-example.component';
 
 import {
   BasicExampleButtonViewComponent,
@@ -43,6 +45,8 @@ const EXAMPLES_COMPONENTS = [
   ServerExamplesComponent,
   CustomViewEditExamplesComponent,
   VariousExamplesComponent,
+    LookupRenderExamplesComponent,
+  BasicLookupRenderExampleComponent,
   BasicExampleButtonViewComponent,
   BasicExampleCustomActionsComponent,
   ButtonViewComponent,
@@ -60,7 +64,7 @@ const EXAMPLES_COMPONENTS = [
   entryComponents: [
     CustomEditorComponent,
     CustomRenderComponent,
-    ButtonViewComponent,
+      ButtonViewComponent,
   ],
   declarations: [
     ExamplesComponent,

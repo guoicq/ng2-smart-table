@@ -1,4 +1,4 @@
-import {
+﻿import {
   Component,
   Input,
   ComponentFactoryResolver,
@@ -55,9 +55,9 @@ export class CustomViewComponent implements OnInit, OnDestroy {
   }
 
   protected getPatch(): ViewCell {
-    return {
-      value: this.cell.getValue(),
-      rowData: this.cell.getRow().getData()
+      return {
+          value: this.cell.getValue(),
+          rowData: this.cell.getRow().getData()
     }
   }
 }

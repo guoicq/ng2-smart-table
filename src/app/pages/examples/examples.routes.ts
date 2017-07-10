@@ -1,10 +1,11 @@
-import { ModuleWithProviders } from '@angular/core';
+﻿import { ModuleWithProviders } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { ExamplesComponent } from './examples.component';
 import { FilterExamplesComponent } from './filter/filter-examples.component';
 import { ServerExamplesComponent } from './server/server-examples.component';
 import { CustomViewEditExamplesComponent } from './custom-edit-view/custom-edit-view-examples.component';
+import { LookupRenderExamplesComponent } from './render/lookup-render-examples.component';
 import { VariousExamplesComponent } from './various/various-examples.component';
 
 export const routes: Routes = [
@@ -27,6 +28,10 @@ export const routes: Routes = [
       {
         path: 'custom-editors-viewers',
         component: CustomViewEditExamplesComponent,
+      },
+      {
+          path: 'lookuprender',
+          component: LookupRenderExamplesComponent,
       },
       {
         path: 'various',

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+﻿import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Ng2CompleterModule } from 'ng2-completer';
@@ -14,6 +14,7 @@ import { SelectEditorComponent } from './cell-editors/select-editor.component';
 import { TextareaEditorComponent } from './cell-editors/textarea-editor.component';
 import { CustomViewComponent } from './cell-view-mode/custom-view.component';
 import { ViewCellComponent } from './cell-view-mode/view-cell.component';
+import { LookupViewerComponent } from './cell-viewer/lookup-viewer.component';
 
 const CELL_COMPONENTS = [
   CellComponent,
@@ -27,6 +28,7 @@ const CELL_COMPONENTS = [
   TextareaEditorComponent,
   CustomViewComponent,
   ViewCellComponent,
+LookupViewerComponent,
 ];
 
 @NgModule({
